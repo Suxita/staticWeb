@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Recipes</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>TSU shefebi - Recipes</h1>
+    <p>
+        Welcome to the Recipes Page! Browse our top-selling dishes and discover pleasure for your tongue and tummy
+    </p>
+
+    <h2>Featured Recipes</h2>
+    <div class="recipe-list">
+        <!-- First Row -->
+        <div class="recipe-list-row">
+            <div class="panel">
+                <h3 class="panel-title">1. Cherry Lady</h3>
+                <img class="panel-image img-fluid" th:src="@{/image/cherry.png}" alt="Cherry Lady Recipe">
+                <div class="panel-body">
+                    <p>⏱ Time to make: Doesn't require much time, but you'd like to watch for the rest of your life</p>
+                    <ul>
+                        <li>Ingredients: 
+                            <ul>
+                                <li>1 sexy man</li>
+                                <li>1 cherry</li>
+                            </ul>
+                        </li>
+                        <li>Instructions: Give him the cherry</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3 class="panel-title">2. Bread</h3>
+                <img class="panel-image img-fluid" th:src="@{/image/bread.png}" alt="Bread Recipe">
+                <div class="panel-body">
+                    <p>⏱ Time to make: No need</p>
+                    <ul>
+                        <li>Instructions: Buy the bread and slice it up</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3 class="panel-title">3. Campfire Pasta</h3>
+                <img class="panel-image img-fluid" th:src="@{/image/pasta.png}" alt="Campfire Pasta Recipe">
+                <div class="panel-body">
+                    <p>⏱ Time: About 30 minutes</p>
+                    <ul>
+                        <li>Ingredients:
+                            <ul>
+                                <li>Spaghetti</li>
+                                <li>Bolognese Sauce</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="recipe-list-row">
+            <div class="panel">
+                <h3 class="panel-title">4. Dango</h3>
+                <img class="panel-image img-fluid" th:src="@{/image/dango.jpg}" alt="Dango Recipe">
+                <div class="panel-body">
+                    <ul>
+                        <li>Ingredients:
+                            <ul>
+                                <li>Mochiko (rice flour)</li>
+                                <li>Water</li>
+                            </ul>
+                        </li>
+                        <li>Instructions: 
+                            <ol>
+                                <li>Mix mochiko with water</li>
+                                <li>Shape into balls</li>
+                                <li>Boil and serve on skewers</li>
+                                <li>Add toppings like sweet soy sauce or anko</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-info">
+        <p>Have questions about our recipes? <a th:href="@{/contact}">Contact us</a>!</p>
+    </div>
+</div>
+</body>
+</html>
